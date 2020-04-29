@@ -3,24 +3,9 @@
 namespace Tests;
 
 use App\Interval;
-use DateTimeImmutable;
-use PHPUnit\Framework\TestCase;
 
-class IntervalTest extends TestCase
+class IntervalTest extends BaseIntervalTest
 {
-    private DateTimeImmutable $today;
-    private DateTimeImmutable $yesterday;
-    private DateTimeImmutable $tomorrow;
-
-    protected function setUp(): void
-    {
-        $this->today = new DateTimeImmutable();
-        $this->yesterday = $this->today->sub(\DateInterval::createFromDateString("1 day"));
-        $this->tomorrow = $this->today->add(\DateInterval::createFromDateString("1 day"));
-
-        parent::setUp();
-    }
-
     public function testValidDates()
     {
         $interval = new Interval($this->yesterday, $this->today);
