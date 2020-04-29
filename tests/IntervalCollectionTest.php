@@ -42,4 +42,6 @@ class IntervalCollectionTest extends BaseIntervalTest
         $this->assertEquals(new Interval($this->today, $this->tomorrow), $result[1]);
         $this->assertEquals(new Interval($this->plus5Days, $this->plus10Days), $result[2]);
     }
+
+    // Tons of other tests here!
 }

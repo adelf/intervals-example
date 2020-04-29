@@ -1,5 +1,5 @@
 {
-    "name": "adelf/intervals",
+    "name": "adelf/intervals-example",
     "type": "project",
     "require": {
         "php": "^7.4"
